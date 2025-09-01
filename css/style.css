@@ -1,0 +1,110 @@
+:root {
+  --primary-color: #fafafa;
+  --secondary-color: #7a78ff;
+  --accent-color: #ff6d38;
+  --heading-color: #333;
+  --light-color: #f9f9f9;
+  --dark-color: #333;
+
+  --btn-primary-bg: #333;
+  --btn-secondary-bg: #8584ff;
+  --btn-accent-bg: #ffc412;
+  --btn-primary-hover-bg: #e74c3c;
+  --btn-secondary-hover-bg: #333;
+
+  --font-family-heading: 'Amatic SC', sans-serif;
+  --border-radius: 8px;
+
+  --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 3px 10px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  --section-margin: 2rem 0;
+  --container-width: 90%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text{
+  width: 100%;
+  height: 80vh;
+  color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/Fiqih_Pradana.jpg);
+  background-size: cover;
+}
+
+.text h1{
+  font-size: 4em; 
+  font-family: var(--font-family-heading);
+}
+
+
+.text{
+  text-align: center;
+}
+
+
+.nav_Bar{
+  color: var(--heading-color);
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_Bar ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.nav_Bar ul li{
+  padding: 10px 30px;
+}
+
+.nav_Bar ul li a{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--heading-color);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav_Bar ul li a:hover{
+  color: var(--secondary-color);
+}
+
+
+.logo{
+  margin: 10px;
+  color: var(--heading-color);
+  /* font-family: var(--font-family-heading); */
+  border-radius: var(--border-radius);
+}
+
+.logo span{
+  color: var(--secondary-color);
+}
+
+.donationbutton{
+  margin: 10px;
+  color: var(--light-color);
+  background-color: var(--btn-secondary-bg);
+  margin-left: 10px;
+  border-radius: 10px;
+  border-color: var(--btn-secondary-bg);;
+  height: 4em;
+  width: 10em;
+  padding: 10px;
+}
