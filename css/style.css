@@ -39,6 +39,8 @@
   align-items: center;
   background-image: url(/images/Fiqih_Pradana.jpg);
   background-size: cover;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .text h1{
