@@ -37,7 +37,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/images/Fiqih_Pradana.jpg);
+  background-image: url(/projets_collectifs/frida-adaopte-adaence-Sosow20/images/Fiqih_Pradana.jpg);
   background-size: cover;
   align-content: center;
   flex-wrap: wrap;
@@ -54,13 +54,14 @@
 }
 
 
-.nav_Bar{
+header .nav_Bar{
   color: var(--heading-color);
-  height: 80px;
-  width: 100vw;
+  height: 9vh;
+  font-size: small;
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .nav_Bar ul{
@@ -109,4 +110,26 @@
   height: 4em;
   width: 10em;
   padding: 10px;
+}
+
+/* FOOTER */
+footer .container1{
+  color: var(--light-color);
+  display: flex;
+  height: 15vh;
+  border: 1px solid red;
+  background-color: var(--dark-color);
+  align-items: center;
+  justify-content: center;
+}
+
+footer .container2 {
+  color: var(--light-color);
+  text-align: center;
+  display: flex;
+  height: 15vh;
+  border: 1px solid red;
+  background-color: var(--dark-color);
+  align-items: center;
+  justify-content: center;
 }
