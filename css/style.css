@@ -29,6 +29,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+ 
+/* HEADER */
 
 .text{
   width: 100%;
@@ -112,6 +114,43 @@ header .nav_Bar{
   padding: 10px;
 }
 
+/* THIRD SECTION */
+
+.textBoxes{
+  margin: 5%;
+  gap: 15px;
+  height: 20vh;
+  display: grid;
+  grid-template-rows: repeat(2, vw);
+  grid-template-columns: repeat(5, vh);
+}
+
+.box1{
+  border: 1px solid black;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.box2{
+  border: 1px solid black;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+
+.box3{
+  border: 1px solid black;
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+
+}
+
+.box4{
+  border: 1px solid black;
+  grid-row: 1 / 2;
+  grid-column: 4 / 5;
+
+}
+
 /* LAST SECTION */
 
 .lastSectionText {
@@ -127,6 +166,7 @@ header .nav_Bar{
 }
 
 .lastSectionButtons{
+  height: 14vh;
   display: flex;
   justify-content: space-evenly;
 
