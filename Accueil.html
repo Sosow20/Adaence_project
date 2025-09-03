@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/web_icon.png">
     <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" src="js/script.js" defer></script>
 </head>
@@ -17,51 +18,99 @@
 
     <body>
         <header>
-            <nav class="nav_Bar">
-                <h1 class="logo"> Ada<span>ence </span> </h1>
-                <ul>
-                    <li> <a href="#"><i data-lucide="home"></i> Accueil </a></li>
-                    <li> <a href="/pages/je_rends_visite.html"><i data-lucide="accessibility"></i> Je rends visite </a>
-                    </li>
-                    <li> <a href="#"><i data-lucide="book-open"></i> Guide du partage </a></li>
-                    <li> <a href="/pages/devenir_bénévole.html"><i data-lucide="hand-helping"></i> Devenir bénévole </a>
-                    </li>
-                </ul>
-                <button class="donationbutton"> Faire un don </button>
-            </nav>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/Accueil.html">Ada<span>ence </span> </a>
+                </div>
+                <nav class="nav_Bar">
+                    <ul>
+                        <li> <a href="/Accueil.html"><i data-lucide="home"></i> Accueil </a></li>
+                        <li> <a href="/pages/je_rends_visite.html"><i data-lucide="accessibility"></i> Je rends
+                                visite</a></li>
+                        <li> <a href="#"><i data-lucide="book-open"></i> Guide du partage </a></li>
+                        <li> <a href="/pages/devenir_bénévole.html"><i data-lucide="hand-helping"></i> Devenir
+                                bénévole</a></li>
+                    </ul>
+                      <!-- <ul class="side_bar">
+                        <li> <a href="/Accueil.html"><i data-lucide="home"></i> Accueil </a></li>
+                        <li> <a href="/pages/je_rends_visite.html"><i data-lucide="accessibility"></i> Je rends
+                                visite</a></li>
+                        <li> <a href="#"><i data-lucide="book-open"></i> Guide du partage </a></li>
+                        <li> <a href="/pages/devenir_bénévole.html"><i data-lucide="hand-helping"></i> Devenir
+                                bénévole</a></li>
+                    </ul> -->
+                </nav>
+                <button class="donation-button" type="button">
+                    <!-- <span class=""> icon </span> -->
+                    <span>Faire un don </span>
+                </button>
+            </div>
+
         </header>
         <section>
-            <div class="text">
-                <h1> Rétablissons les liens</h1>
-                <p> si vous offriez un peu de votre temps à ceux qui en ont le plus besoin ? Prenez rendez-vous
-                    pour
-                    partager un moment avec une personne âgée isolée.</p>
+            <div class="hero-banner">
+                <div class="hero_content" >
+                    <h1> Rétablissons les liens</h1>
+                    <p> si vous offriez un peu de votre temps à ceux qui en ont le plus besoin ? Prenez rendez-vous
+                        pour
+                        partager un moment avec une personne âgée isolée.</p>
+                </div>
             </div>
         </section>
-        <section>
+        <section id="firstSection">
+            <div class="searchBox">
+                barre de recherche
+
+            </div>
+
+        </section>
+        <section id="secondSection">
+            <div class="secondContainer">
+                <div class="textSS">
+                    <h1> Les personnalité à rencontrer </h1>
+                    <p> Feuilletez les visages de celles et ceux qui attendent simplement un peu de votre temps.
+                        Chaque sourire porte une histoire, chaque rencontre est une promesse</p>
+                </div>
+                <div class="galeryGrid">
+                    <div class="pic1"><img src="/images/Grid_photos/1_top.jpg"></div>
+                    <div class="pic2"><img src="/images/Grid_photos/2_top.jpg"></div>
+                    <div class="pic3"><img src="/images/Grid_photos/3_top.jpg"></div>
+                    <div class="pic4"><img src="/images/Grid_photos/4_top.jpg"></div>
+                    <div class="pic5"><img src="/images/Grid_photos/5_bottom.jpg"></div>
+                    <div class="pic6"><img src="/images/Grid_photos/6_bottom.jpg"></div>
+                    <div class="pic7"><img src="/images/Grid_photos/7_bottom.jpg"></div>
+                    <div class="pic8"><img src="/images/Grid_photos/8_bottom.jpg"></div>
+                </div>
+            </div>
+        </section>
+        <section id="thirdSection">
             <div class="thirdSectionText">
-                <h2> Comment ça Marche </h2>
-                <p> Offrir un peu de votre temps, c'est offrir beaucoup. 
+                <h1> Comment ça Marche </h1>
+                <p> Offrir un peu de votre temps, c'est offrir beaucoup.
                     Découvrez comment planifier une visite en toute simplicité . </p>
             </div>
             <div class="textBoxes">
                 <div class="box1">
+                    <img src="/images/icons/MagnifyingGlass.ico" alt="loupe"></img>
                     <h1> 1. Choisissez une rencontre </h1>
-                    <p> Parcourez les profils de nos ainés et trouvez la personne 
+                    <p> Parcourez les profils de nos ainés et trouvez la personne
                         avec qui vous aimeriez partager un moment chaleureux </p>
                 </div>
                 <div class="box2">
+                    <img src="/images/icons/formulaire.ico" alt="formulaire"></img>
                     <h1> 2. Remplissez le formulaire </h1>
-                    <p> Indiquez vos disponibilités et vos envies. 
+                    <p> Indiquez vos disponibilités et vos envies.
                         Cela nous aide à organiser une rencontre adaptée et en toute confiance</p>
                 </div>
                 <div class="box3">
+                    <img src="/images/icons/waving hand.ico" alt="waving Hand"></img>
                     <h1> 3. Partagez un moment </h1>
-                    <p> Rendez visite à la personne âgée dans un cadre bienveillant. 
+                    <p> Rendez visite à la personne âgée dans un cadre bienveillant.
                         Une discussion, une balade ou simplement l'aider à une tâche!
                         Chaque moment compte.</p>
                 </div>
                 <div class="box4">
+                    <img src="/images/icons/heart.ico" alt="heart"></img>
                     <h1> 4. Créez du lien </h1>
                     <p> Si le courant passe, vous pouvez revenir !
                         Ensemble, tissons des liens et combattons l'isolement pas à pas.
@@ -70,9 +119,9 @@
             </div>
 
         </section>
-        <section>
+        <section id="lastSection">
             <div class="lastSectionText">
-                <h2> Prêt.e à faire la différence ? </h2>
+                <h1> Prêt.e à faire la différence ? </h1>
                 <p> Offrez un peu de votre temps, partagez un moment, créez du lien... Chaque présence compte. <br>
                     En tendant la main à une personne âgée, vous lui offrez bien plus qu'une visite: une vraie bouffée
                     de chaleur humaine.</p>
@@ -84,7 +133,37 @@
             </div>
         </section>
         <footer>
-            <div class="container1"> FOOTER </div>
+            <div class="container1">
+                <div class="sectionOne">
+                    <h3> ADAENCE </h3>
+                    <P> Notre mission est de recréer du lien avec les personnes âgées isolées,
+                        en leur offrant des moments de partage, d'écoute et de présence.</P>
+                </div>
+                <div class="sectionTwo">
+                    <h3> INFORMATIONS UTILES </h3>
+                    <ul>
+                        <li> FAQs</li>
+                        <li> Liste des activités</li>
+                        <li> Nous contacter </li>
+                        <li> Mentions légales</li>
+                    </ul>
+                </div>
+                <div class="sectionThree">
+                    <h3> CONTACT </h3>
+                    <ul>
+                        <li> 116 Rue du Faubourd Saint-Martin</li>
+                        <li> 75010 Paris, France</li>
+                        <li> Email: contact@adaence.fr</li>
+                        <li> +33 1 23 45 67 89 </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!-- <div class="box3"> INFORMATIONS UTILES</div> -->
+
+            </div>
             <div class="container2">
                 <p> <span>&#169;</span> 2025 Adaence. Tous droits réservés. <br>
                     Ce site a été développé dans le cadre d'un projet pour ADA Tech School</p>
@@ -92,5 +171,6 @@
         </footer>
 
     </body>
+    <script> lucide.createIcons() </script>
 
 </html>
