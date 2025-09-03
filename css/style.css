@@ -356,12 +356,13 @@ header{
 footer .container1 {
 
   color: var(--light-color);
-  display: flex;
+  
   height: 15vh;
   gap: 20px;
   background-color: var(--dark-color);
+  display: flex;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style: none;
   text-decoration: none;
 }
@@ -386,6 +387,19 @@ footer .container1 {
   font-family: var(--font-family-heading);
   color: var(--secondary-color);
 
+}
+
+.container1 .sectionOne{
+  width: 30%;
+  padding: 10px;
+}
+.container1 .sectionTwo{
+  width: 30%;
+  padding: 10px;
+}
+.container1 .sectionThree{
+  width: 30%;
+  padding: 10px;
 }
 
 footer .container2 {
