@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Accueil.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/web_icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/coffee.png">
     <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" src="js/script.js" defer></script>
 </head>
@@ -18,71 +18,60 @@
 
     <body>
         <header>
-            <div class="header-content">
+            <div class="header-container">
                 <div class="logo">
-                    <img src="/images/coffee.png" alt="icon-logo">
+                    <img src="/images/icons/coffee.png" alt="icon-logo">
                     <a href="/Accueil.html">Ada<span>ence </span> </a>
                 </div>
-                <nav class="nav_Bar">
-                    <ul>
-                        <li> <a href="/Accueil.html"><i data-lucide="home"></i> Accueil </a></li>
-                        <li> <a href="/pages/je_rends_visite.html"><i data-lucide="accessibility"></i> Je rends
-                                visite</a></li>
-                        <li> <a href="#"><i data-lucide="book-open"></i> Guide du partage </a></li>
-                        <li> <a href="/pages/devenir_bénévole.html"><i data-lucide="hand-helping"></i> Devenir
-                                bénévole</a></li>
-                    </ul>
+                <nav class="nav-bar">
+                    <a href="/Accueil.html"><i data-lucide="home"></i> Accueil </a>
+                    <a href="/pages/je_rends_visite.html"><i data-lucide="accessibility"></i> Je rends visite</a>
+                    <a href="#"><i data-lucide="book-open"></i> Guide du partage </a>
+                    <a href="/pages/devenir_bénévole.html"><i data-lucide="hand-helping"></i> Devenir bénévole</a>
                 </nav>
-                <button type="button"> Faire un don🫶 </button>
+                <button class="donation-btn" type="button"> Faire un don 🫶 </button>
             </div>
-
         </header>
-        <section id="Hero-Banner-Section">
-            <div class="hero-banner">
-                <div class="hero_content">
-                    <h1> Rétablissons les liens</h1>
-                    <p> si vous offriez un peu de votre temps à ceux qui en ont le plus besoin ? Prenez rendez-vous
-                        pour
-                        partager un moment avec une personne âgée isolée.</p>
-                </div>
-            </div>
-        </section>
-        <section id="1stSection">
-            <div class="firstSectionContainer">
-            <div class="searchBox">
-                barre de recherche
-            </div>
-            </div>
-        </section>
-        <section id="2ndSection">
-            <div class="secondSectionContainer">
-                <div class="textSS">
-                    <h1> Les personnalité à rencontrer </h1>
-                    <p> Feuilletez les visages de celles et ceux qui attendent simplement un peu de votre temps.
-                        Chaque sourire porte une histoire, chaque rencontre est une promesse</p>
-                </div>
-                <div class="galeryGrid">
-                    <div class="pic1">1</div>
-                    <div class="pic-2">2</div>
-                    <div class="pic3">3</div>
-                    <div class="pic4">4</div>
-                    <div class="pic5">5</div>
-                    <div class="pic6">6</div>
-                    <div class="pic7">7</div>
-                    <div class="pic8">8</div>
+        <section id="main">
+            <div class="hero-relative">
+                    <div class="hero_banner">
+                        <h1>Rétablissons les liens</h1>
+                        <p>Et si vous offriez un peu de votre temps à ceux qui en ont le plus besoin ? Prenez rendez-vous
+                            pour partager un moment avec une personne âgée isolée.</p>
                     </div>
-                    <!-- <div class="pic1"><img src="/images/Grid_photos/1_top.jpg"></div>
-                    <div class="pic2"><img src="/images/Grid_photos/2_top.jpg"></div>
-                    <div class="pic3"><img src="/images/Grid_photos/3_top.jpg"></div>
-                    <div class="pic4"><img src="/images/Grid_photos/4_top.jpg"></div>
-                    <div class="pic5"><img src="/images/Grid_photos/5_bottom.jpg"></div>
-                    <div class="pic6"><img src="/images/Grid_photos/6_bottom.jpg"></div>
-                    <div class="pic7"><img src="/images/Grid_photos/7_bottom.jpg"></div>
-                    <div class="pic8"><img src="/images/Grid_photos/8_bottom.jpg"></div> -->
-                
+                    <div class="search-box">
+                          <div>
+                            <label for=""> Moment à partager </label>
+                            <select name="" id=""></select>
+                        </div>
+                        <div>
+                            <label for=""></label>
+                            <input type="text">
+                        </div>
+                      
+                        <button class="search-btn" type="button"> Rechercher </button>
+                    </div>
+                    <div class="text-grid">
+                        <h1> Les personnalité à rencontrer </h1>
+                        <p> Feuilletez les visages de celles et ceux qui attendent simplement un peu de votre temps.
+                            Chaque sourire porte une histoire, chaque rencontre est une promesse</p>
+                    </div>
+                    <div class="galery-grid">
+                        <div class="pic1">1</div>
+                        <div class="pic-2">2</div>
+                        <div class="pic3">3</div>
+                        <div class="pic4">4</div>
+                        <div class="pic5">5</div>
+                        <div class="pic6">6</div>
+                        <div class="pic7">7</div>
+                        <div class="pic8">8</div>
+                    </div>
+                    <div class="profiles-btn">
+                    <button type="button"> Voir tous les profils </button>
+                    </div>
             </div>
         </section>
-        <section id="3rdSection">
+        <section id="thirdSection">
             <div class="thirdSectionContainer">
                 <div class="thirdSectionText">
                     <h1> Comment ça Marche </h1>
@@ -119,7 +108,7 @@
                 </div>
             </div>
         </section>
-        <section id="5thSection">
+        <section id="fifthSection">
             <div class="lastSectionContainer">
                 <div class="lastSectionText">
                     <h1> Prêt.e à faire la différence ? </h1>
@@ -136,36 +125,36 @@
             </div>
         </section>
         <footer>
-            <div class="container1">
-                <div class="sectionOne">
+            <div class="top-footer">
+                <div class="first-section">
                     <h3> ADAENCE </h3>
                     <P> Notre mission est de recréer du lien avec les personnes âgées isolées,
                         en leur offrant des moments de partage, d'écoute et de présence.</P>
+                    <div class="media-icon">
+                        <a href="https://www.facebook.com/?locale=fr_FR"><i class="icon" data-lucide="facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="icon" data-lucide="instagram"></i> </a>
+                        <a href="https://fr.linkedin.com/"><i class="icon" data-lucide="linkedin"></i></a>
+                        <a href="https://www.twitch.tv/"><i class="icon" data-lucide="twitch"></i></a>
+                    </div>
                 </div>
-                <div class="sectionTwo">
+                <div class="middle-section">
                     <h3> INFORMATIONS UTILES </h3>
-                    <ul>
-                        <li> <a href="">FAQs </a></li>
-                        <li> <a href="">Liste des activités </a></li>
-                        <li> <a href="contact@adaence.fr"> Nous contacter</a></li>
-                        <li> <a href="">Mentions légales </a></li>
-                    </ul>
+                    <a href="">FAQs </a>
+                    <a href="">Liste des activités </a>
+                    <a href="mailto:contact@adaence.fr"> Nous contacter</a>
+                    <a href="">Mentions légales </a>
                 </div>
-                <div class="sectionThree">
+                <div class="last-section">
                     <h3> CONTACT </h3>
-                    <ul>
-                        <li> 116 Rue du Faubourd Saint-Martin</li>
-                        <li> 75010 Paris, France</li>
-                        <li> Email: contact@adaence.fr</li>
-                        <li> +33 1 23 45 67 89 </li>
-                    </ul>
-
+                    <li> 116 Rue du Faubourd Saint-Martin</li>
+                    <li> 75010 Paris, France</li>
+                    <li> Email: contact@adaence.fr</li>
+                    <li> +33 1 23 45 67 89 </li>
                 </div>
             </div>
-            <hr class="footer-divider" color="grey" size="1" />
-            <div class="container2">
-                <p> <span>&#169;</span> 2025 Adaence. Tous droits réservés. <br>
-                    Ce site a été développé dans le cadre d'un projet pour ADA Tech School</p>
+            <div class="bottom-footer">
+                <h1> &copy; 2025 Adaence. Tous droits réservés. </h1>
+                <p> Ce site a été développé dans le cadre d'un projet pour ADA Tech School</p>
             </div>
         </footer>
 
