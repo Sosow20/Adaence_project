@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page</title>
+    <title>Je rends visite</title>
     <link rel="stylesheet" href="/css/je_rends_visite.css">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/coffee.png">
 </head>
@@ -26,26 +26,113 @@
         </div>
     </header>
     <section>
-        <div class="container">
-            <div class="search-bar">
-
+        <div class="main-container">
+            <div class="search-box">
+                <div id="select-moments">
+                    <label for=""> Moment à partager </label>
+                    <select name="" id="option">
+                        <option> Un repas </option>
+                        <option> Un café/thé</option>
+                        <option> Une promenade</option>
+                        <option> Une sortie culturelle </option>
+                        <option> Autre activité</option>
+                    </select>
+                </div>
+                <div id="enter-city">
+                    <label for="">Localisation</label>
+                    <input type="text" name="city" placeholder="Votre ville" required>
+                </div>
+                <div>
+                    <button class="search-btn" type="button"> Rechercher</button>
+                </div>
             </div>
             <div class="profil-grid">
-                <div class="profil-1 top"></div>
-                <div class="profil-2 top"></div>
-                <div class="profil-3 top"></div>
-                <div class="profil-4 top"></div>
-                <div class="profil-5 bottom"></div>
-                <div class="profil-6 bottom"></div>
-                <div class="profil-7 bottom"></div>
-                <div class="profil-8 bottom"></div>
+                <div class="profil">
+                    <div class="profil-pic">
+                        <img src="/images/Franco.jpg" alt="">
+                    </div>
+                    <div class="profil-content">
+                      <div class="display-data"></div>
+                        <button> Programmer un moment</button>
+                    </div>
+
+                </div>
+                <div class="profil">
+                    <div class="profil-pic">
+                        <img src="/images/Soares.jpg" alt="">
+                    </div>
+                    <div class="profil-content">
+                        <div class="display-data"></div>
+                        <button> Programmer un moment</button>
+                    </div>
+
+                </div>
+                <div class="profil">
+                    <div class="profil-pic">
+                        <img src="/images/Tim.jpg" alt="">
+                    </div>
+                    <div class="profil-content">
+                    <div class="display-data"></div>
+                        <button> Programmer un moment</button>
+                    </div>
+
+                </div>
+                <div class="profil">
+                    <div class="profil-pic">
+                        <img src="/images/Shimo.jpg" alt="">
+                    </div>
+                    <div class="profil-content">
+                    <div class="display-data"></div>
+                        <button> Programmer un moment</button>
+                    </div>
+                </div>
+                <div class="profil">
+                    <div class="profil-pic">
+                        <img src="/images/Zanon.jpg" alt="">
+                    </div>
+                    <div class="profil-content">
+                     <div class="display-data"></div>
+                        <button> Programmer un moment</button>
+                    </div>
+
+                </div>
+                <div class="profil">
+                    <div class="profil-pic">
+                        <img src="/images/Matveev.jpg" alt="">
+                    </div>
+                    <div class="profil-content">
+                     <div class="display-data"></div>
+                        <button> Programmer un moment</button>
+                    </div>
+
+                </div>
+                <div class="profil">
+                    <div class="profil-pic">
+                        <img src="/images/Mahe.jpg" alt="">
+                    </div>
+                    <div class="profil-content">
+                     <div class="display-data"></div>
+                        <button> Programmer un moment</button>
+                    </div>
+                </div>
+
+                <div class="profil">
+                    <div class="profil-pic">
+                        <img src="/images/Samir.jpg" alt="">
+                    </div>
+                    <div class="profil-content">
+                      <div class="display-data"></div>
+                        <button> Programmer un moment</button>
+                    </div>
+                </div>
             </div>
-
-
+            <div class="pagination">
+                <a class="link" href="">1</a>
+                <a class="link" href="">2</a>
+                <a class="link" href="">3</a>
+                <button class="btn"> Suivant » </button>
+            </div>
         </div>
-    </section>
-    <section>
-
     </section>
     <footer>
         <div class="top-footer">
@@ -80,6 +167,7 @@
             <p> Ce site a été développé dans le cadre d'un projet pour ADA Tech School</p>
         </div>
     </footer>
+    <script type="module" src="/js/je_rends_visite.js" defer></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script> lucide.createIcons() </script>
 </body>
