@@ -19,7 +19,7 @@ const displayProfils = async () => {
         <div class="profil-text">
             <ul>
                 <li> <strong> Type de moment:</strong> ${user.type} </li>
-                <li> <strong>Prénom:</strong>  ${user.firstname} </li>
+                <li id="name"> <strong>Prénom:</strong>  ${user.firstname} </li>
                 <li> <strong>Métier:</strong> ${user.job} • ${user.age} ans </li>
                 <li> <strong>Localisation:</strong> ${user.city} </li>
                 <li> <strong>Description:</strong> ${user.description} </li>

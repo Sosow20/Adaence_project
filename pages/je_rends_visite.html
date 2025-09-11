@@ -11,12 +11,12 @@
 
 <body>
     <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="/images/icons/coffee.png" alt="icon-logo">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="/images/icons/coffee.png" alt="coffee logo">
                 <a href="/Accueil.html">Ada<span>ence </span> </a>
             </div>
-            <nav class="nav-bar">
+            <nav class="nav-link" aria-label="liens de navigation">
                 <a href="/Accueil.html"><i data-lucide="home"></i> Accueil </a>
                 <a href="/pages/je_rends_visite.html"><i data-lucide="accessibility"></i> Je rends visite</a>
                 <a href="#"><i data-lucide="book-open"></i> Guide du partage </a>
@@ -25,7 +25,7 @@
             <button class="donation-btn" type="button"> Faire un don 🫶 </button>
         </div>
     </header>
-    <section>
+    <section id="middle-section">
         <div class="main-container">
             <div class="search-box">
                 <div id="select-moments">
@@ -42,129 +42,111 @@
                     <label for="">Localisation</label>
                     <input type="text" name="city" placeholder="Votre ville" required>
                 </div>
-                <div>
-                    <button class="search-btn" type="button"> Rechercher</button>
+                <button id="search-btn" type="button"> Rechercher 🔎 </button>
+                <div class="bottom-box">
+                    <small>80 moments trouvés</small>
+                    <a href=""> Réinitialiser les filtres</a>
                 </div>
             </div>
-            <div class="profil-grid">
-                <div class="profil">
-                    <div class="profil-pic">
-                        <img src="/images/Franco.jpg" alt="">
+            <div class="profil-box">
+                    <div class="profil">
+                        <img src="/images/photos/Mazur.jpg" alt="profil Mazur">
+                        <div class="profil-content">
+                            <div class="display-data"></div>
+                            <button> Programmer un moment</button>
+                        </div>
                     </div>
-                    <div class="profil-content">
-                      <div class="display-data"></div>
-                        <button> Programmer un moment</button>
+                    <div class="profil">
+                        <img src="/images/photos/Soares.jpg" alt="profil Soares">
+                        <div class="profil-content">
+                            <div class="display-data"></div>
+                            <button> Programmer un moment</button>
+                        </div>
                     </div>
-
-                </div>
-                <div class="profil">
-                    <div class="profil-pic">
-                        <img src="/images/Soares.jpg" alt="">
+                    <div class="profil">
+                        <img src="/images/photos/Franco.jpg" alt="profil Franco">
+                        <div class="profil-content">
+                            <div class="display-data"></div>
+                            <button> Programmer un moment</button>
+                        </div>
                     </div>
-                    <div class="profil-content">
-                        <div class="display-data"></div>
-                        <button> Programmer un moment</button>
+                    <div class="profil">
+                        <img src="/images/photos/Tim.jpg" alt="profil Tim">
+                        <div class="profil-content">
+                            <div class="display-data"></div>
+                            <button> Programmer un moment</button>
+                        </div>
                     </div>
-
-                </div>
-                <div class="profil">
-                    <div class="profil-pic">
-                        <img src="/images/Tim.jpg" alt="">
+                    <div class="profil">
+                        <img src="/images/photos/Zanon.jpg" alt="profil Zanon">
+                        <div class="profil-content">
+                            <div class="display-data"></div>
+                            <button> Programmer un moment</button>
+                        </div>
                     </div>
-                    <div class="profil-content">
-                    <div class="display-data"></div>
-                        <button> Programmer un moment</button>
+                    <div class="profil">
+                        <img src="/images/photos/Mahe.jpg" alt="profil Mahe">
+                        <div class="profil-content">
+                            <div class="display-data"></div>
+                            <button> Programmer un moment</button>
+                        </div>
                     </div>
-
-                </div>
-                <div class="profil">
-                    <div class="profil-pic">
-                        <img src="/images/Shimo.jpg" alt="">
+                    <div class="profil">
+                        <img src="/images/photos/Samir.jpg" alt="profil Samir">
+                        <div class="profil-content">
+                            <div class="display-data"></div>
+                            <button> Programmer un moment</button>
+                        </div>
                     </div>
-                    <div class="profil-content">
-                    <div class="display-data"></div>
-                        <button> Programmer un moment</button>
+                    <div class="profil">
+                        <img src="/images/photos/Shimo.jpg" alt="profil Shimo">
+                        <div class="profil-content">
+                            <div class="display-data"></div>
+                            <button> Programmer un moment</button>
+                        </div>
                     </div>
-                </div>
-                <div class="profil">
-                    <div class="profil-pic">
-                        <img src="/images/Zanon.jpg" alt="">
-                    </div>
-                    <div class="profil-content">
-                     <div class="display-data"></div>
-                        <button> Programmer un moment</button>
-                    </div>
-
-                </div>
-                <div class="profil">
-                    <div class="profil-pic">
-                        <img src="/images/Matveev.jpg" alt="">
-                    </div>
-                    <div class="profil-content">
-                     <div class="display-data"></div>
-                        <button> Programmer un moment</button>
-                    </div>
-
-                </div>
-                <div class="profil">
-                    <div class="profil-pic">
-                        <img src="/images/Mahe.jpg" alt="">
-                    </div>
-                    <div class="profil-content">
-                     <div class="display-data"></div>
-                        <button> Programmer un moment</button>
-                    </div>
-                </div>
-
-                <div class="profil">
-                    <div class="profil-pic">
-                        <img src="/images/Samir.jpg" alt="">
-                    </div>
-                    <div class="profil-content">
-                      <div class="display-data"></div>
-                        <button> Programmer un moment</button>
-                    </div>
-                </div>
             </div>
             <div class="pagination">
                 <a class="link" href="">1</a>
                 <a class="link" href="">2</a>
                 <a class="link" href="">3</a>
-                <button class="btn"> Suivant » </button>
+                <a class="btn"> Suivant » </a>
             </div>
         </div>
     </section>
     <footer>
         <div class="top-footer">
             <div class="first-section">
-                <h3> ADAENCE </h3>
-                <P> Notre mission est de recréer du lien avec les personnes âgées isolées,
+                <h3 class="title"> ADAENCE </h3>
+                <P class="text"> Notre mission est de recréer du lien avec les personnes âgées isolées,
                     en leur offrant des moments de partage, d'écoute et de présence.</P>
                 <div class="media-icon">
-                    <a href="https://www.facebook.com/?locale=fr_FR"><i class="icon" data-lucide="facebook"></i></a>
-                    <a href="https://www.instagram.com/"><i class="icon" data-lucide="instagram"></i> </a>
-                    <a href="https://fr.linkedin.com/"><i class="icon" data-lucide="linkedin"></i></a>
-                    <a href="https://www.twitch.tv/"><i class="icon" data-lucide="twitch"></i></a>
+                    <a class="text" href="https://www.facebook.com/?locale=fr_FR"><i class="icon"
+                            data-lucide="facebook"></i></a>
+                    <a class="text" href="https://www.instagram.com/"><i class="icon" data-lucide="instagram"></i>
+                    </a>
+                    <a class="text" href="https://fr.linkedin.com/"><i class="icon" data-lucide="linkedin"></i></a>
+                    <a class="text" href="https://www.twitch.tv/"><i class="icon" data-lucide="twitch"></i></a>
                 </div>
             </div>
             <div class="middle-section">
-                <h3> INFORMATIONS UTILES </h3>
-                <a href="">FAQs </a>
-                <a href="">Liste des activités </a>
-                <a href="mailto:contact@adaence.fr"> Nous contacter</a>
-                <a href="">Mentions légales </a>
+                <h3 class="title"> INFORMATIONS UTILES </h3>
+                <a class="text link" href="">FAQs </a>
+                <a class="text link" href="">Liste des activités </a>
+                <a class="text link" href="mailto:contact@adaence.fr"> Nous contacter</a>
+                <a class="text link" href="">Mentions légales </a>
             </div>
             <div class="last-section">
-                <h3> CONTACT </h3>
-                <li> 116 Rue du Faubourd Saint-Martin</li>
-                <li> 75010 Paris, France</li>
-                <li> Email: contact@adaence.fr</li>
-                <li> +33 1 23 45 67 89 </li>
+                <h3 class="title"> CONTACT </h3>
+                <li class="text list"> 116 Rue du Faubourd Saint-Martin</li>
+                <li class="text list"> 75010 Paris, France</li>
+                <li class="text list"> Email: contact@adaence.fr</li>
+                <li class="text list"> +33 1 23 45 67 89 </li>
             </div>
         </div>
         <div class="bottom-footer">
-            <h1> &copy; 2025 Adaence. Tous droits réservés. </h1>
-            <p> Ce site a été développé dans le cadre d'un projet pour ADA Tech School</p>
+            <small> &copy; 2025 Adaence. Tous droits réservés. </small>
+            <small> Ce site a été développé dans le cadre d'un projet pour ADA Tech School</small>
         </div>
     </footer>
     <script type="module" src="/js/je_rends_visite.js" defer></script>
