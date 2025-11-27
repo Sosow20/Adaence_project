@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+:root {
+    --primary-color: #fafafa;
+    --secondary-color: #7a78ff;
+    --accent-color: #ff6d38;
+    --heading-color: #333;
+    --light-color: #f9f9f9;
+    --dark-color: #333;
+
+    --btn-primary-bg: #333;
+    --btn-secondary-bg: #8584ff;
+    --btn-accent-bg: #ffc412;
+    --btn-primary-hover-bg: #e74c3c;
+    --btn-secondary-hover-bg: #333;
+
+    --font-family-heading: 'Amatic SC', sans-serif;
+    --font-family-roboto: Roboto;
+    --border-radius: 8px;
+
+    --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 3px 10px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    --section-margin: 2rem 0;
+    --container-width: 90%;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*&____________________header______________________ */
+/*&________________________________________________ */
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow-xl);
+    height: 10vh;
+
+    .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        a {
+            font-family: roboto;
+            font-weight: 600;
+            font-size: 2rem;
+            text-decoration: none;
+            color: var(--dark-color);
+
+            span {
+                color: var(--secondary-color);
+            }
+        }
+    }
+
+    .nav-link {
+        display: flex;
+        gap: 2rem;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            font-family: roboto;
+            font-weight: 600;
+            color: var(--dark-color);
+            text-decoration: none;
+
+            &:hover {
+                color: var(--secondary-color);
+            }
+        }
+    }
+
+    .donation-btn {
+        width: 10rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        border: none;
+
+        background-color: var(--btn-secondary-bg);
+
+        font-family: roboto;
+        font-weight: 500;
+        color: var(--light-color);
+        text-align: center;
+
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--btn-secondary-hover-bg);
+        }
+    }
+
+}
+
+
+/*&________________MIDDLE SECTION___________________*/
+
+.main-container {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow-xl);
+
+    .search-box {
+
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        align-content: center;
+        gap: 1rem;
+
+        width: 60vw;
+        height: 20vh;
+
+        background-color: white;
+        box-shadow: var(--shadow-xl);
+
+        border-radius: var(--border-radius);
+
+
+        #select-moments {
+            font-family: roboto;
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            #option {
+                padding: 5px;
+                width: 20rem;
+                border-radius: 5px grey;
+            }
+
+        }
+
+        #enter-city {
+            font-family: roboto;
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            input {
+                padding: 5px;
+                width: 20rem;
+                border-radius: 5px grey;
+
+            }
+        }
+
+        #search-btn {
+            display: flex;
+            flex-direction: column;
+
+
+            padding: 5px;
+            width: 20rem;
+            background-color: var(--dark-color);
+            border-radius: 2rem;
+
+            color: var(--light-color);
+            font-family: roboto;
+            font-size: 1rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--secondary-color);
+            }
+
+        }
+
+        .bottom-box {
+            display: flex;
+            justify-content: space-between;
+            gap: 50rem;
+
+            small {
+                color: var(--dark-color);
+                font-family: roboto;
+            }
+
+            a {
+                color: var(--accent-color);
+                font-family: roboto;
+            }
+        }
+
+
+
+    }
+
+
+    .profil-box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        width: 90vw;
+        margin: 0 auto;
+        padding: 2rem;
+        justify-content: center;
+
+        .profil {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-xl);
+            overflow: hidden;
+            min-height: 500px;
+
+            img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                object-position: center;
+
+            }
+
+            .profil-content {
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+
+                .profil-text ul{
+                    list-style: none;
+                     #name{
+                            color: var(--accent-color);
+                    }
+
+                }
+
+                button {
+                    padding: 1rem;
+                    border-radius: 2rem;
+                    width: 12rem;
+                    font-family: roboto;
+                    font-weight: 500;
+                    color: var(--light-color);
+                    background-color: var(--dark-color);
+                    border: none;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: var(--btn-primary-hover-bg);
+                    }
+                }
+            }
+        }
+    }
+
+
+    .pagination {
+
+        font-family: roboto;
+        font-weight: 500;
+        font-size: 1rem;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .link {
+            padding: 1rem;
+            background-color: white;
+            border-radius: var(--border-radius);
+            color: var(--secondary-color);
+            text-decoration: none;
+
+
+        }
+
+        .btn {
+            font-family: roboto;
+            font-weight: 500;
+            font-size: 1rem;
+
+            color: var(--secondary-color);
+            padding: 1rem;
+            background-color: var(--primary-color);
+            border-radius: var(--border-radius);
+
+            cursor: pointer;
+
+            &:hover {
+                background-color: #7a78ff;
+                color: var(--light-color);
+
+
+            }
+        }
+
+        .link {
+            &:hover {
+                background-color: #7a78ff;
+                color: var(--light-color);
+            }
+        }
+
+
+
+    }
+}
+
+
+/*&______________________FOOTER____________________ */
+/*&________________________________________________ */
+
+.top-footer {
+    color: var(--light-color);
+    height: 25vh;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    background-color: var(--dark-color);
+
+    .title {
+        font-size: 2rem;
+        font-family: var(--font-family-heading);
+        color: var(--secondary-color);
+    }
+
+    .text {
+        font-family: roboto;
+    }
+
+    .link {
+        color: grey;
+        text-decoration: none;
+
+        &:hover {
+            color: var(--secondary-color);
+        }
+    }
+
+    .list {
+        list-style: none;
+    }
+
+    /*& To do: centrer les icones ? */
+    .icon {
+        margin-right: 1rem;
+        color: var(--light-color);
+        background-color: grey;
+        border-radius: 50%;
+
+        &:hover {
+            color: var(--dark-color);
+        }
+    }
+
+
+
+    .first-section {
+        width: 450px;
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+
+    .middle-section {
+        width: 450px;
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+
+    .last-section {
+        width: 450px;
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+    }
+}
+
+.bottom-footer {
+    color: grey;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-color);
+
+    border-top: 1px solid grey;
+    font-family: roboto;
+
+}
